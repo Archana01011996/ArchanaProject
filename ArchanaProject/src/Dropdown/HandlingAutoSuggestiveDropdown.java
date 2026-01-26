@@ -10,21 +10,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class HandlingAutoSuggestiveDropdown {
 
 	public static void main(String[] args) throws InterruptedException {
-		
-		WebDriver driver=new ChromeDriver();
+
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		driver.findElement(By.id("autosuggest")).sendKeys("Am");
 		Thread.sleep(3000);
-		List<WebElement> options=driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
-		
-		for(WebElement Option:options)
-		{
-			if(Option.getText().equalsIgnoreCase("Cameroon"))
-					{
-				      Option.click();
-				      break;
-					}
+		List<WebElement> options = driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
+
+		for (WebElement Option : options) {
+			if (Option.getText().equalsIgnoreCase("Cameroon")) {
+				Option.click();
+				break;
+			}
 		}
 
 	}

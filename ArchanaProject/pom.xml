@@ -20,6 +20,12 @@
     <version>7.11.0</version>
     
 </dependency>
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>33.5.0-jre</version> <!-- Use the latest version available -->
+</dependency>
+
 
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
@@ -27,8 +33,26 @@
     <artifactId>webdrivermanager</artifactId>
     <version>6.3.3</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v143 -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-devtools-v143</artifactId>
+    <version>4.39.0</version>
+</dependency>
 
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-chrome-driver</artifactId>
+    <version>4.38.0</version>
+</dependency>
 
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-remote-driver</artifactId>
+    <version>4.38.0</version>
+</dependency>
   </dependencies>
   
   <build>
@@ -38,7 +62,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.13.0</version>
         <configuration>
-          <release>24</release>
+          <release>25</release>
         </configuration>
       </plugin>
     </plugins>
